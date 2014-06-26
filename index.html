@@ -3,19 +3,28 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Ember.js - Template</title>
+		<title>Ember.js - PeepCode Tutorial</title>
 
-		<script src="js/Libs/JQuery/jquery-1.11.1.min.js"></script>
-		<script src="js/Libs/Ember/handlebars-v1.3.0.js"></script>
-		<script src="js/Libs/Ember/ember.js"></script>
-		<script src="js/Libs/Ember/ember-data.js"></script>
+		<!-- CSS Files -->
+		<link rel="stylesheet" href="css/foundation.css">
+		<link rel="stylesheet" type="css/app.css" href="">
+
+		<script src="js/Libs/jquery-1.8.3.min.js"></script>
+		<script src="js/Libs/handlebars-1.0.0.rc.2.js"></script>
+		<script src="js/Libs/ember.js"></script>
+		<script src="js/Libs/ember-data.js"></script>
 
 		<script src="js/app.js"></script>
 	</head>
 
 	<body>
+		<script type="text/x-handlebars" id="application">
+			<h1>Ordr</h1>
+			{{ outlet }}
+		</script>
+
 		<script type="text/x-handlebars" id="index">
-			<h1>Hello Ember Template</h1>
+			Hello Ember
 		</script>
 	</body>
 

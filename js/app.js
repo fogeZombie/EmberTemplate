@@ -6,6 +6,8 @@ App = Ember.Application.create();
 App.Router.map(function() {
 });
 
+
+
 // example of fixture data
 // App.<DataName> = DS.Model.extend({
 // 	title: DS.attr('string'),
