@@ -26,6 +26,13 @@
 		<script type="text/x-handlebars" id="index">
 			Hello Ember
 		</script>
+
+		<script type="text/x-handlebars" id="tables">
+			<h2>Tables</h2>
+			{{#each table in controller}}
+				{{table.id}}
+			{{/each}}
+		</script>
 	</body>
 
 </html>
