@@ -7,7 +7,7 @@
 
 		<!-- CSS Files -->
 		<link rel="stylesheet" href="css/foundation.css">
-		<link rel="stylesheet" type="css/app.css" href="">
+		<link rel="stylesheet" href="css/app.css">
 
 		<script src="js/Libs/jquery-1.8.3.min.js"></script>
 		<script src="js/Libs/handlebars-1.0.0.rc.2.js"></script>
@@ -43,7 +43,7 @@
 		<script type="text/x-handlebars" id="_tableMenu">
 			<h2>Tables</h2>
 			{{#each table in controller}}
-				{{table.id}}
+				{{#linkTo "table" table class="panel 6 columns"}}{{table.id}}{{/linkTo}}
 			{{/each}}
 
 		</script>
