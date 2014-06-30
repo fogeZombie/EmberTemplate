@@ -23,7 +23,7 @@
 				<div class="twelve columns">
 					<h1>Ordr</h1>
 					<hr>
-					<p>{{ outlet }}</p>
+					<p>{{outlet}}</p>
 				</div>
 			</div>
 		</script>
@@ -37,6 +37,10 @@
 				<div class="four columns" id="tables">
 				{{partial "tableMenu"}}
 				</div>
+
+				<div class="eight columns" id="order">
+					{{outlet}}
+				</div>
 			</div>
 		</script>
 
@@ -45,7 +49,10 @@
 			{{#each table in controller}}
 				{{#linkTo "table" table class="panel 6 columns"}}{{table.id}}{{/linkTo}}
 			{{/each}}
+		</script>
 
+		<script type="text/x-handlebars" id="table">
+			<h2>Table <span>{{id}}</span></h2>
 		</script>
 	</body>
 
