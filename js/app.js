@@ -132,7 +132,7 @@ App.TabItem.FIXTURES = [{
 App.Food.FIXTURES = [{
   id: 1,
   name: 'Pizza',
-  imageUrl: '../img/pizza.png',
+  imageUrl: 'img/pizza.png',
   cents: 1500
 }, {
   id: 2,
