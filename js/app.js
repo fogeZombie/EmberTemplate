@@ -28,11 +28,11 @@ App.ApplicationRoute = Ember.Route.extend({
 });
 
 // AUTO GENERATED
-// App.TableRoute = Ember.Route.extend({
-// 	model: function(params) {
-// 		return App.Table.find(params.table_id);
-// 	}
-// });
+App.TableRoute = Ember.Route.extend({
+	model: function(params) {
+		return App.Table.find(params.table_id);
+	}
+});
 
 // controllers
 App.TablesController = Ember.ArrayController.extend();
@@ -41,6 +41,7 @@ App.TablesController = Ember.ArrayController.extend();
 // App.TableController = Ember.ObjectController.extend();
 
 App.FoodController = Ember.ArrayController.extend();
+App.TabController = Ember.ObjectController.extend();
 
 // models
 App.Store = DS.Store.extend({
