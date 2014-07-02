@@ -34,6 +34,13 @@ App.TableRoute = Ember.Route.extend({
 	}
 });
 
+// view helpers
+Ember.Handlebars.registerBoundHelper('money', function(value) {
+  return (value % 100 === 0 ?
+          value / 100 + '.00' :
+          parseInt(value /100, 10) + '.' + value % 100);
+});
+
 // controllers
 App.TablesController = Ember.ArrayController.extend();
 
@@ -41,7 +48,9 @@ App.TablesController = Ember.ArrayController.extend();
 // App.TableController = Ember.ObjectController.extend();
 
 App.FoodController = Ember.ArrayController.extend();
-App.TabController = Ember.ObjectController.extend();
+
+App.TabController = Ember.ObjectController.extend({
+});
 
 // models
 App.Store = DS.Store.extend({
@@ -54,7 +63,12 @@ App.Table = DS.Model.extend({
 });
 
 App.Tab = DS.Model.extend({
-  tabItems: DS.hasMany('App.TabItem')
+  tabItems: DS.hasMany('App.TabItem'),
+  cents: function() {
+    return this.get('tabItems').getEach('cents').reduce(function(accum, item) {
+      return accum + item;
+    }, 0);
+  }.property('tabItems.@each.cents')
 });
 
 App.TabItem = DS.Model.extend({
