@@ -47,7 +47,17 @@ App.TablesController = Ember.ArrayController.extend();
 // AUTO GENERATED
 // App.TableController = Ember.ObjectController.extend();
 
-App.FoodController = Ember.ArrayController.extend();
+App.FoodController = Ember.ArrayController.extend({
+  addFood: function(food) {
+    var table = this.controllerFor('table').get('model');
+    var tabItems = table.get('tab.tabItems');
+
+    tabItems.createRecord({
+      food: food,
+      cents: food.get('cents')
+    });
+  }
+});
 
 App.TabController = Ember.ObjectController.extend({
 });
