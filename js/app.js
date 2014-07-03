@@ -1,4 +1,6 @@
-App = Ember.Application.create();
+App = Ember.Application.create({
+  rootElement: "#github-app" // the rootElement field indicates to Ember where it should inject its data
+});
 
 // for using fixture data
 // App.ApplicationAdapter = DS.FixtureAdapter.extend();
