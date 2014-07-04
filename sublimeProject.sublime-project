@@ -1,0 +1,31 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.png",
+				"*.sublime*",
+				"*.ico"
+			],
+			"folder_exclude_patterns":
+			[
+				"*"
+			],
+			"path": "."
+		},
+		{
+			"file_exclude_patterns":
+			[
+			],
+			"name": "js",
+			"path": "./js"
+		},
+		{
+			"file_exclude_patterns":
+			[
+			],
+			"path": "./libs"
+		}
+	]
+}
