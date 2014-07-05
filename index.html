@@ -81,25 +81,54 @@
 
 		<script type="text/x-handlebars" data-template-name="application">
 			<div class="row">
-				<div class="col-md-12">
-					<h1>Github Namshub</h1>
-					<hr/>
+				<div class="col-md-12" style="margin-top:48px">
 					{{outlet}}
 				</div>
 			</div>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="index">
+			<h1>Github Namshub</h1>
+			<hr/>
 			<p>This is the GitHub explorer for all of my favorite developers.</p>
 			<ul>
-				{{#each person in controller}}
-					<li><a href="#">{{person}}</a></li>
+				{{#each}}
+					<li>{{#link-to 'user' this}}{{name}}{{/link-to}}</li>
 				{{/each}}
 			</ul>
 			<p>
 				<button class="btn btn-success" {{action "clicked"}}>Click Me!</button>
 			</p>
 			{{renderedOn}}
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="user">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="well">
+						<p class="text-center">
+							{{#link-to 'user' this}}<img {{bind-attr src=avatar_url}} style="width:140px"/>{{/link-to}}
+						</p>
+						<h4>{{#link-to 'user' this}}{{name}}{{/link-to}}</h4>
+						<p>
+							{{company}}<br/>
+							{{location}}<br/>
+							{{email}}<br/>
+						</p>
+						<hr/>
+
+						<table class="table table-striped">
+							<tr><td>Followers:</td><td>{{followers}}</td></tr>
+							<tr><td>Repositories:</td><td>{{public_repos}}</td></tr>
+							<tr><td>Gists:</td><td>{{public_gists}}</td></tr>
+						</table>
+						<p>
+							{{#link-to "index"}}Back{{/link-to}}
+						</p>
+					</div>
+				</div>
+			</div>
+
 		</script>
 
 	</body>

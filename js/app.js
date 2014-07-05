@@ -6,20 +6,19 @@ App = Ember.Application.create({
 // App.ApplicationAdapter = DS.FixtureAdapter.extend();
 
 App.Router.map(function() {
+  this.resource("user", {path: "/users/:login"});
 });
 
 // routes
 App.IndexRoute = Ember.Route.extend({
   model: function() {
-    return [
-      "Richard Foge",
-      "Rob Conery",
-      "Scott Hanselman",
-      "Tom Dale",
-      "Yehuda Katz",
-      "Jon Galloway",
-      "Phil Hack"
-    ];
+    return devs;
+  }
+});
+
+App.UserRoute = Ember.Route.extend({
+  model: function(params) {
+    return Ember.$.getJSON("https://api.github.com/users/" + params.login);
   }
 });
 
@@ -37,6 +36,18 @@ App.IndexController = Ember.ArrayController.extend({
 });
 
 // models
+
+var devs = [
+      {login: "fogeZombie", name: "Richard Foge"},
+      {login: "cbdillon", name: "Brandon Dillon"},
+      {login: "halcyon00", name: "Matt Alderman"},
+      {login: "robconery", name: "Rob Conery"},
+      {login: "shanselman", name: "Scott Hanselman"},
+      {login: "tomdale", name: "Tom Dale"},
+      {login: "wycats", name: "Yehuda Katz"},
+      {login: "jongalloway", name: "Jon Galloway"},
+      {login: "haacked", name: "Phil Hack"},
+    ];
 
 // example of fixture data
 // App.<DataName> = DS.Model.extend({
