@@ -1,4 +1,5 @@
 App = Ember.Application.create({
+  LOG_TRANSITIONS: true,
   rootElement: "#github-app" // the rootElement field indicates to Ember where it should inject its data
 });
 
@@ -6,7 +7,9 @@ App = Ember.Application.create({
 // App.ApplicationAdapter = DS.FixtureAdapter.extend();
 
 App.Router.map(function() {
-  this.resource("user", {path: "/users/:login"});
+  this.resource("user", {path: "/users/:login"}, function() {
+    this.resource("repositories");
+  });
 });
 
 // routes
@@ -22,6 +25,19 @@ App.UserRoute = Ember.Route.extend({
   }
 });
 
+App.UserIndexRoute = Ember.Route.extend({
+  model: function() {
+    return this.modelFor('user');
+  }
+});
+
+App.RepositoriesRoute = Ember.Route.extend({
+  model: function() {
+    var user = this.modelFor('user');
+    return Ember.$.getJSON(user.repos_url);
+  }
+});
+
 // controllers
 App.IndexController = Ember.ArrayController.extend({
   renderedOn: function () {
@@ -33,6 +49,11 @@ App.IndexController = Ember.ArrayController.extend({
       console.log("clicked!");
     }
   }
+});
+
+App.RepositoriesController = Ember.ArrayController.extend({
+  needs: ["user"],
+  user: Ember.computed.alias("controllers.user")
 });
 
 // models

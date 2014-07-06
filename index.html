@@ -93,7 +93,7 @@
 			<p>This is the GitHub explorer for all of my favorite developers.</p>
 			<ul>
 				{{#each}}
-					<li>{{#link-to 'user' this}}{{name}}{{/link-to}}</li>
+					<li>{{#link-to 'user' this.login}}{{name}}{{/link-to}}</li>
 				{{/each}}
 			</ul>
 			<p>
@@ -127,8 +127,37 @@
 						</p>
 					</div>
 				</div>
+
+				<div class="col-md-8">
+					{{outlet}}
+				</div>
 			</div>
 
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="user/index">
+			<h2>{{name}} GitHub</h2>
+			<hr/>
+			<ul>
+				<li>{{#link-to 'repositories'}}Repositories{{/link-to}}</li>
+				<li><a href="#">News and Events</a></li>
+				<li><a href="#">Gists</a></li>
+			</ul>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="repositories">
+			<ol class="breadcrumb">
+				<li>{{#link-to 'index'}}Devs{{/link-to}}</li>
+				<li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+				<li><a href="#">Repositories</a></li>
+			</ol>
+			<table class="table table-striped">
+				{{#each}}
+					<tr><td><h4>{{name}}</h4></td><td>{{description}}</td></tr>
+				{{else}}
+					No Repositories
+				{{/each}}
+			</table>
 		</script>
 
 	</body>
