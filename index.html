@@ -202,10 +202,33 @@
 
 		<script type="text/x-handlebars" data-template-name="forks">
 			<h1>FORKS</h1>
+			<table class="table table-striped">
+				{{#each}}
+					<tr>
+						<td><img {{bind-attr src=owner.avatar_url}} style="width:80px"></td>
+						<td>{{full_name}}</td>
+						<td>{{created_at}}</td>
+					</tr>
+				{{else}}
+					<tr><td>No Forks</td></tr>
+				{{/each}}
+			</table>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="commits">
 			<h1>COMMITS</h1>
+			<table class="table table-striped">
+				{{#each}}
+					<tr>
+						<td><img {{bind-attr src=committer.avatar_url}} style="width:80px"></td>
+						<td>{{commit.committer.name}}</td>
+						<td>{{commit.message}}</td>
+						<td>{{commit.committer.date}}</td>
+					</tr>
+				{{else}}
+					<tr><td>No Forks</td></tr>
+				{{/each}}
+			</table>
 		</script>
 
 	</body>

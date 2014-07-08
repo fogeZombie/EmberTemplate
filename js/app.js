@@ -61,6 +61,21 @@ App.IssuesRoute = Ember.Route.extend({
   }
 });
 
+App.ForksRoute = Ember.Route.extend({
+  model: function() {
+    var repo = this.modelFor('repository');
+    return Ember.$.getJSON(repo.forks_url);
+  }
+});
+
+App.CommitsRoute = Ember.Route.extend({
+  model: function() {
+    var repo = this.modelFor('repository');
+    var url = repo.commits_url.replace("{/sha}", "");
+    return Ember.$.getJSON(url);
+  }
+});
+
 // controllers
 App.IndexController = Ember.ArrayController.extend({
   renderedOn: function () {
