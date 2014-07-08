@@ -153,11 +153,59 @@
 			</ol>
 			<table class="table table-striped">
 				{{#each}}
-					<tr><td><h4>{{name}}</h4></td><td>{{description}}</td></tr>
+					<tr><td><h4>{{#link-to 'repository' this.name}}{{name}}{{/link-to}}</h4></td><td>{{description}}</td></tr>
 				{{else}}
 					No Repositories
 				{{/each}}
 			</table>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="repository">
+			<ol class="breadcrumb">
+				<li>{{#link-to 'index'}}Devs{{/link-to}}</li>
+				<li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+				<li>{{#link-to 'repositories'}}Repositories{{/link-to}}</li>
+				<li class="active">{{name}}</li>
+			</ol>
+			<h1>{{name}} Repo</h1>
+			<p>{{description}}</p>
+			<ul>
+				<li>Language: {{language}}</li>
+				<li>Watchers: {{watchers}}</li>
+				<li>Open Issues: {{open_issues}}</li>
+				<li>Clone: <b>{{clone_url}}</b></li>
+				<li>Web: <a {{bind-attr href=html_url}} target=_blank>{{html_url}}</a></li>
+			</ul>
+			<hr/>
+			<ul class="list-inline">
+				<li>{{#link-to 'issues'}}Issues{{/link-to}}</li>
+				<li>{{#link-to 'forks'}}Forks{{/link-to}}</li>
+				<li>{{#link-to 'commits'}}Commits{{/link-to}}</li>
+			</ul>
+			{{outlet}}
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="issues">
+			<h4>ISSUES</h4>
+			<table class="table table-striped">
+				{{#each}}
+					<tr>
+						<td><img {{bind-attr src=user.avatar_url}} style="width:80px"></td>
+						<td>{{title}}</td>
+						<td>{{created_at}}</td>
+					</tr>
+				{{else}}
+					<tr><td>No Issues</td></tr>
+				{{/each}}
+			</table>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="forks">
+			<h1>FORKS</h1>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="commits">
+			<h1>COMMITS</h1>
 		</script>
 
 	</body>

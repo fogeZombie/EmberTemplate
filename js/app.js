@@ -9,6 +9,11 @@ App = Ember.Application.create({
 App.Router.map(function() {
   this.resource("user", {path: "/users/:login"}, function() {
     this.resource("repositories");
+    this.resource("repository", {path: "repositories/:name"}, function(){
+      this.resource("issues");
+      this.resource("forks");
+      this.resource("commits");
+    })
   });
 });
 
@@ -38,6 +43,24 @@ App.RepositoriesRoute = Ember.Route.extend({
   }
 });
 
+App.RepositoryRoute = Ember.Route.extend({
+  model: function(params) {
+    var user = this.modelFor('user');
+    // build the URL for the repo call manually
+    var url = "https://api.github.com/repos/" + user.login + "/" + params.name;
+
+    return Ember.$.getJSON(url);
+  }
+});
+
+App.IssuesRoute = Ember.Route.extend({
+  model: function() {
+    var repo = this.modelFor('repository');
+    var url = repo.issues_url.replace("{/number}", "");
+    return Ember.$.getJSON(url);
+  }
+});
+
 // controllers
 App.IndexController = Ember.ArrayController.extend({
   renderedOn: function () {
@@ -56,6 +79,10 @@ App.RepositoriesController = Ember.ArrayController.extend({
   user: Ember.computed.alias("controllers.user")
 });
 
+App.RepositoryController = Ember.ObjectController.extend({
+  needs: ["user"],
+  user: Ember.computed.alias("controllers.user")
+});
 // models
 
 var devs = [
