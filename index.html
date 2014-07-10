@@ -176,12 +176,17 @@
 				<li>Clone: <b>{{clone_url}}</b></li>
 				<li>Web: <a {{bind-attr href=html_url}} target=_blank>{{html_url}}</a></li>
 			</ul>
+
 			<hr/>
-			<ul class="list-inline">
-				<li>{{#link-to 'issues'}}Issues{{/link-to}}</li>
-				<li>{{#link-to 'forks'}}Forks{{/link-to}}</li>
-				<li>{{#link-to 'commits'}}Commits{{/link-to}}</li>
-			</ul>
+			{{#unless forked}}
+				<ul class="list-inline">
+					<li>{{#link-to 'issues'}}Issues{{/link-to}}</li>
+					<li>{{#link-to 'forks'}}Forks{{/link-to}}</li>
+					<li>{{#link-to 'commits'}}Commits{{/link-to}}</li>
+				</ul>
+			{{else}}
+				<p class="text-muted">Forked {{fromDate created_at}}</p>
+			{{/unless}}
 			{{outlet}}
 		</script>
 
@@ -191,11 +196,14 @@
 				{{#each}}
 					<tr>
 						<td><img {{bind-attr src=user.avatar_url}} style="width:80px"></td>
-						<td>{{title}}</td>
-						<td>{{created_at}}</td>
+						<td>
+							{{title}}
+							<hr/>
+							<p class="text-muted">{{fromDate created_at}}</p>
+						</td>
 					</tr>
 				{{else}}
-					<tr><td>No Issues</td></tr>
+					<tr><td><p class="text-muted">No Issues</p></td></tr>
 				{{/each}}
 			</table>
 		</script>
@@ -206,11 +214,14 @@
 				{{#each}}
 					<tr>
 						<td><img {{bind-attr src=owner.avatar_url}} style="width:80px"></td>
-						<td>{{full_name}}</td>
-						<td>{{created_at}}</td>
+						<td>
+							{{full_name}}
+							<hr/>
+							<p class="text-muted">{{fromDate created_at}}</p>
+						</td>
 					</tr>
 				{{else}}
-					<tr><td>No Forks</td></tr>
+					<tr><td><p class="text-muted">No Forks</p></td></tr>
 				{{/each}}
 			</table>
 		</script>
@@ -226,7 +237,7 @@
 						<td>{{commit.committer.date}}</td>
 					</tr>
 				{{else}}
-					<tr><td>No Forks</td></tr>
+					<tr><td><p class="text-muted">No Commits</p></td></tr>
 				{{/each}}
 			</table>
 		</script>

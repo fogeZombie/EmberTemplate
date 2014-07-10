@@ -96,10 +96,27 @@ App.RepositoriesController = Ember.ArrayController.extend({
 
 App.RepositoryController = Ember.ObjectController.extend({
   needs: ["user"],
-  user: Ember.computed.alias("controllers.user")
-});
-// models
+  user: Ember.computed.alias("controllers.user"),
+  forked: Ember.computed.alias('fork')
 
+  // forked: function(){
+  //   if(this.fork === true) {
+  //     return true;
+  //   }
+  //   else {
+  //     return false;
+  //   }
+  // }.property('fork')
+});
+
+// handlebars helpers
+Ember.Handlebars.registerBoundHelper('fromDate', function(theDate) {
+  var today = moment();
+  var target = moment(theDate);
+  return target.from(today);
+});
+
+// models
 var devs = [
       {login: "fogeZombie", name: "Richard Foge"},
       {login: "cbdillon", name: "Brandon Dillon"},
