@@ -98,34 +98,51 @@ App.RepositoriesController = Ember.ArrayController.extend({
 App.RepositoryController = Ember.ObjectController.extend({
   needs: ["user"],
   user: Ember.computed.alias("controllers.user"),
-  forked: Ember.computed.alias('fork')
 
-  // forked: function(){
-  //   if(this.fork === true) {
-  //     return true;
-  //   }
-  //   else {
-  //     return false;
-  //   }
-  // }.property('fork')
+  // functionally equivalent to the active 'forked' member
+  // forked: Ember.computed.alias('fork')
+
+  forked: function(){
+    if(this.get('fork') === true) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }.property('fork')
 });
 
 App.RepositoryNewIssueController = Ember.ObjectController.extend({
   needs: ["repository"],
   repo: Ember.computed.alias("controllers.repository"),
 
+  // issueTitle: "Default Title",  // don't have to declare these
+  // issueBody: "Default Body",    // but it allows you to set a default
+
+  // this setup creates a new GitHub.Issue object every time repo.model changes
+  issue: function(){
+    return App.Issue.create();
+  }.property("repo.model"),
+
   actions: {
     submitIssue: function(){
-      var title = $('#new-issue-title').val();
-      var body = $('#new-issue-body').val();
+      // some other ways of grabbing data that don't work ideally in this case
+      // var vals = this.getProperties("issueTitle", "issueBody");
+      // console.log(vals);
+      // var body = $('#new-issue-body').val(); // for grabbing with jQuery, element needs an 'id' field
+
+      var issue = this.get("issue");
       // POST issues_url
       var url = this.get('repo').get('issues_url').replace("{/number}", "");
 
-      // Ember.$.post(url, {title: title, body: body}, function(result) {
+      // Ember.$.post(url, {title: vals.issueTitle, body: vals.issueBody}, function(result) {
       //   // success...
-      //   this.transitionToRoute("issues");
       // });
-      console.log("Submitted " + title + " to: " + url);
+      console.log("Submitted " + issue.get("title") + " to: " + url);
+
+      // reset the issue for future use on the same repo
+      this.set('issue', App.Issue.create());
+      this.transitionToRoute("issues");
     }
   }
 });
@@ -135,6 +152,15 @@ Ember.Handlebars.registerBoundHelper('fromDate', function(theDate) {
   var today = moment();
   var target = moment(theDate);
   return target.from(today);
+});
+
+// objects
+App.Issue = Ember.Object.extend({
+  title: "",
+  body: "",
+  isValid: function() {
+    // do some fancy validation
+  }
 });
 
 // models

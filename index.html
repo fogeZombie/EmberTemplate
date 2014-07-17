@@ -195,11 +195,11 @@
 			<h3>Create an Issue</h3>
 			<div class="form-group">
 				<label for="title">Title</label><br>
-				<input type="text" class="form-control" name="title" id="new-issue-title" placeholder="Issue Title"
+				{{input value=issue.title class="form-control" placeholder="Issue Title"}}
 			</div>
 			<div class="form-group">
 				<label for="body">Body</label><br>
-				<textarea name="title" class="form-control" id="new-issue-body" placeholder="What's your issue?" rows="5"></textarea>
+				{{textarea value=issue.body class="form-control" placeholder="What's your issue?" rows=5}}
 			</div>
 
 			<button class="btn btn-primary" {{action "submitIssue"}}>Submit Issue</button>
