@@ -121,10 +121,10 @@ App.RepositoryNewIssueController = Ember.ObjectController.extend({
       // POST issues_url
       var url = this.get('repo').get('issues_url').replace("{/number}", "");
 
-      Ember.$.post(url, {title: title, body: body}, function(result) {
-        // success...
-        this.transitionToRoute("issues");
-      });
+      // Ember.$.post(url, {title: title, body: body}, function(result) {
+      //   // success...
+      //   this.transitionToRoute("issues");
+      // });
       console.log("Submitted " + title + " to: " + url);
     }
   }
