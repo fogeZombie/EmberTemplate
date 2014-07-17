@@ -128,34 +128,18 @@
 			}
 		},
 		{
-			"file": "css/app.css",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1751,
+				"buffer_size": 8333,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Foge/Desktop/SoD_Docs/SoD_SublimeProject.sublime-project",
-			"settings":
-			{
-				"buffer_size": 2022,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 509,
+				"buffer_size": 4136,
 				"line_ending": "Windows"
 			}
 		}
@@ -233,6 +217,10 @@
 	"file_history":
 	[
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/app.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/css/app.css",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/sublimeProject.sublime-project",
+		"/C/Users/Foge/Desktop/SoD_Docs/SoD_SublimeProject.sublime-project",
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/libs/Utilities/Moment.js",
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/models.js",
 		"/C/Program Files (x86)/NaturalMotion/euphoriaConnect 6.0.1/scripts/UpgradeProjectTo6.lua",
@@ -241,7 +229,6 @@
 		"/C/Users/Foge/Desktop/GitAI_Test/.git/COMMIT_EDITMSG",
 		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/js/app.js",
 		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/index.html",
-		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/app.js",
 		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/.gitignore",
 		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/.jshintrc",
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/.DS_Store",
@@ -356,10 +343,7 @@
 		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_G18C.xml",
 		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_TacP.xml",
 		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_LAR15.xml",
-		"/C/UL/class3/main/Game/Scripts/Entities/Items/UL_Nuke.lua",
-		"/C/UL/class3/main/Game/Scripts/Entities/Items/UL_Mine_Bouncing_Betty.lua",
-		"/C/UL/class3/main/Game/Scripts/Entities/Items/ULOverwatch.lua",
-		"/C/UL/class3/main/Game/Scripts/Entities/Others/Fan.lua"
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/UL_Nuke.lua"
 	],
 	"find":
 	{
@@ -370,6 +354,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"<open files>",
 			"<open files>,<open folders>",
 			"<open files>",
 			"<open files>,<open folders>",
@@ -384,6 +369,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"moment",
+			"repoName",
+			"controller",
+			"\\",
+			"/",
 			"view",
 			"		o    ",
 			"	·         ",
@@ -506,12 +496,7 @@
 			" ?[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
 			"([0-9a-zA-Z]+\\s)/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
 			"([0-9a-zA-Z]+\\s)*/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
-			"([0-9a-zA-Z]+)\\s*/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
-			"’",
-			"[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
-			" Eldridge",
-			"[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
-			"[0-9a-zA-Z]+/[0-9a-zA-Z]+[']?[0-9a-zA-Z]?"
+			"([0-9a-zA-Z]+)\\s*/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -555,7 +540,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -596,8 +581,8 @@
 						"selection":
 						[
 							[
-								368,
-								368
+								348,
+								348
 							]
 						],
 						"settings":
@@ -607,53 +592,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "css/app.css",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1751,
+						"buffer_size": 8333,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1703,
-								1703
+								6849,
+								6849
 							]
 						],
 						"settings":
@@ -662,52 +619,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1104.0,
+						"translation.y": 5255.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/C/Users/Foge/Desktop/SoD_Docs/SoD_SublimeProject.sublime-project",
-					"settings":
-					{
-						"buffer_size": 2022,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 509,
+						"buffer_size": 4136,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								33,
-								33
+								3012,
+								3012
 							]
 						],
 						"settings":
@@ -717,7 +647,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2559.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

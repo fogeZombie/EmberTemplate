@@ -183,11 +183,26 @@
 					<li>{{#link-to 'issues'}}Issues{{/link-to}}</li>
 					<li>{{#link-to 'forks'}}Forks{{/link-to}}</li>
 					<li>{{#link-to 'commits'}}Commits{{/link-to}}</li>
+					<li>{{#link-to 'repository.newIssue'}}New Issue{{/link-to}}</li>
 				</ul>
 			{{else}}
 				<p class="text-muted">Forked {{fromDate created_at}}</p>
 			{{/unless}}
 			{{outlet}}
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="repository/newIssue">
+			<h3>Create an Issue</h3>
+			<div class="form-group">
+				<label for="title">Title</label><br>
+				<input type="text" class="form-control" name="title" id="new-issue-title" placeholder="Issue Title"
+			</div>
+			<div class="form-group">
+				<label for="body">Body</label><br>
+				<textarea name="title" class="form-control" id="new-issue-body" placeholder="What's your issue?" rows="5"></textarea>
+			</div>
+
+			<button class="btn btn-primary" {{action "submitIssue"}}>Submit Issue</button>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="issues">

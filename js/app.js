@@ -13,6 +13,7 @@ App.Router.map(function() {
       this.resource("issues");
       this.resource("forks");
       this.resource("commits");
+      this.route("newIssue")
     })
   });
 });
@@ -107,6 +108,26 @@ App.RepositoryController = Ember.ObjectController.extend({
   //     return false;
   //   }
   // }.property('fork')
+});
+
+App.RepositoryNewIssueController = Ember.ObjectController.extend({
+  needs: ["repository"],
+  repo: Ember.computed.alias("controllers.repository"),
+
+  actions: {
+    submitIssue: function(){
+      var title = $('#new-issue-title').val();
+      var body = $('#new-issue-body').val();
+      // POST issues_url
+      var url = this.get('repo').get('issues_url').replace("{/number}", "");
+
+      Ember.$.post(url, {title: title, body: body}, function(result) {
+        // success...
+        this.transitionToRoute("issues");
+      });
+      console.log("Submitted " + title + " to: " + url);
+    }
+  }
 });
 
 // handlebars helpers
