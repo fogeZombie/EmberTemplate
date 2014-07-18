@@ -24,20 +24,120 @@
 	</head>
 
 	<body>
+		<!-- Bootstrap Test -->
+		<nav class="navbar navbar-default" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">Aura Simulator</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">Home</a></li>
+		        <li><a href="#">About</a></li>
+		        <li><a href="#">Contact</a></li>
+		        <li><a href="#">Admin</a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container" id="user-admin-app">
+			<!-- Empty on purpose -->
+			<!-- Ember uses the jQuery selector in "id" to know where to inject its data -->
+		</div>
+
 		<script type="text/x-handlebars">
 			<h1>Hello Ember Admin Tools</h1>
 
 			{{outlet}}
 		</script>
 
-		<script type="text/x-handlebars" id="user-admin-app" data-template-name="index">
-			<p>Select what you want to do from below</p>
+		<script type="text/x-handlebars" data-template-name="index">
+			<p>Select what you want to do from below...</p>
 
 			<ul>
-				<li>{{#link-to 'users'}}User Administration{{/link-to}}</li>
+				<li>{{#link-to 'users'}}User List{{/link-to}}</li>
 				<li><a href="#">Roles</a></li>
 				<li><a href="#">Logs</a></li>
 			</ul>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="users">
+			<h2>Last 20 Users</h2>
+
+			<table class="table table-striped">
+				<tr>
+					<th>User</th>
+					<th>Name</th>
+					<th>Member Since</th>
+				</tr>
+
+				{{#each}}
+					<tr>
+						<td><img {{bind-attr src=this.imageSource}} width="60"/></td>
+						<td>{{#link-to 'user' this.id}}{{this.name}}{{/link-to}}</td>
+						<td>12 months ago</td>
+					</tr>
+				{{else}}
+					</table>
+					No users.
+				{{/each}}
+
+			</table>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="user">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="well">
+						<p class="text-center">
+							<img {{bind-attr src=this.imageSource}} width="120"/>
+						</p>
+						<hr/>
+						<table class="table table-striped">
+							<tr><td>Name:</td><td>{{this.name}}</td></tr>
+							<tr><td>Twitter: </td><td>@FAKE_DATA</td></tr>
+							<tr><td>Bio: </td><td>Lorem Ipsum</td></tr>
+							<tr><td>Email: </td><td>fake_dataake@tekpub.com</td></tr>
+						</table>
+						<p>
+							{{#link-to 'users'}}Back{{/link-to}}
+						</p>
+					</div>
+				</div>
+			</div>
 		</script>
 	</body>
 
