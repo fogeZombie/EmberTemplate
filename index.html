@@ -24,8 +24,20 @@
 	</head>
 
 	<body>
-		<script type="text/x-handlebars" id="index">
+		<script type="text/x-handlebars">
 			<h1>Hello Ember Admin Tools</h1>
+
+			{{outlet}}
+		</script>
+
+		<script type="text/x-handlebars" id="user-admin-app" data-template-name="index">
+			<p>Select what you want to do from below</p>
+
+			<ul>
+				<li>{{#link-to 'users'}}User Administration{{/link-to}}</li>
+				<li><a href="#">Roles</a></li>
+				<li><a href="#">Logs</a></li>
+			</ul>
 		</script>
 	</body>
 

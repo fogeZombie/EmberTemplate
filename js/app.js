@@ -1,9 +1,12 @@
-App = Ember.Application.create();
+App = Ember.Application.create({
+  rootElement: "#user-admin-app"
+});
 
 // for using fixture data
 // App.ApplicationAdapter = DS.FixtureAdapter.extend();
 
 App.Router.map(function() {
+  this.resource('users');
 });
 
 // example of fixture data
