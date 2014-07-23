@@ -9,7 +9,11 @@ App.ApplicationAdapter = DS.FixtureAdapter.extend();
 // url mapping
 App.Router.map(function() {
   this.resource('users');
-  this.resource('user', {path: "users/:id"});
+  this.resource('user', {path: "users/:id"}, function() {
+    this.route('basicInfo', {path: "basicInfo"});
+    this.route('changePassword', {path: "changePassword"});
+    this.route('changeRole', {path: "changeRole"});
+  });
 });
 
 // routes
