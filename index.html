@@ -95,7 +95,18 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="users">
-			<h2>Last 20 Users</h2>
+			<div class="row">
+
+				<div class="col-md-10">
+					<h3>Find a User by Email or Last Name</h3>
+					<form class="form-inline" {{action "searchForUser" on="submit"}}>
+						{{input value=searchTerm class="form-control" placeholder="Email or Name"}}
+						<button class="btn btn-success">Go</button>
+					</form>
+				</div>
+			</div>
+
+			<h2>{{title}}</h2>
 
 			<table class="table table-striped">
 				<tr>
@@ -144,18 +155,30 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/index">
-				<ol class="breadcrumb">
-					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
-					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
-					<li class="active">{{this.name}}</li>
-				</ol>
-				<hr/>
-				<h3>What do you want to do?</h3>
-				<ul>
-				<li>{{#link-to 'user.basicInfo'}}Edit Basic Info{{/link-to}}</li>
-				<li>{{#link-to 'user.changePassword'}}Change Password{{/link-to}}</li>
-				<li>{{#link-to 'user.changeRole'}}Change Role{{/link-to}}</li>
-				</ul>
+			<ol class="breadcrumb">
+				<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
+				<li>{{#link-to 'users'}}Users{{/link-to}}</li>
+				<li class="active">{{this.name}}</li>
+			</ol>
+			<hr/>
+			<h3>What do you want to do?</h3>
+			<ul>
+			<li>{{#link-to 'user.basicInfo'}}Edit Basic Info{{/link-to}}</li>
+			<li>{{#link-to 'user.changePassword'}}Change Password{{/link-to}}</li>
+			<li>{{#link-to 'user.changeRole'}}Change Role{{/link-to}}</li>
+			<li>{{#link-to 'user.addNote'}}Add Note{{/link-to}}</li>
+			</ul>
+
+			<hr/>
+
+			<div class="row">
+				<div class="col-md-4">
+					<h4>Notes</h4>
+				</div>
+				<div class="col-md-4">
+					<h4>Logs</h4>
+				</div>
+			</div>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/basicInfo">
@@ -210,6 +233,24 @@
 						<label><input type="checkbox">Role02</input></label>
 					</div>
 				</form>
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="user/addNote">
+				<ol class="breadcrumb">
+					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
+					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
+					<li>{{#link-to 'user.index'}}{{this.name}}{{/link-to}}</li>
+					<li class="active">Add Note</li>
+				</ol>
+
+				<h3>Add Note to {{this.name}}</h3>
+
+				{{foge-Alpha inputInt01="4" inputInt02="4" inputString="Test?"}}
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="components/foge-Alpha">
+			<h4>{{outputInt}}</h4>
+			<h4>{{outputString}}</h4>
 		</script>
 	</body>
 
