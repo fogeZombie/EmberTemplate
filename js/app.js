@@ -71,7 +71,11 @@ App.FogeAlphaComponent = Ember.Component.extend({
 
   outputString: function() {
     return this.get('inputString') + ": KABOOM!";
-  }.property('inputString')
+  }.property('inputString'),
+
+  otherThing: function() {
+    return "OtherThing."
+  }.property()
 });
 
 // fixture data definition
