@@ -78,6 +78,12 @@ App.FogeAlphaComponent = Ember.Component.extend({
   }.property()
 });
 
+// views
+App.BreadCrumbView = Ember.View.extend({
+  templateName: "breadcrumbs",
+  pageTitle: "SOMETHING"
+});
+
 // fixture data definition
 App.User = DS.Model.extend({
   login: DS.attr('string'),

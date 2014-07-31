@@ -155,11 +155,12 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/index">
-			<ol class="breadcrumb">
-				<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
-				<li>{{#link-to 'users'}}Users{{/link-to}}</li>
-				<li class="active">{{this.name}}</li>
-			</ol>
+				<ol class="breadcrumb">
+					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
+					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
+					<li class="active">{{this.name}}</li>
+				</ol>
+
 			<hr/>
 			<h3>What do you want to do?</h3>
 			<ul>
@@ -182,12 +183,7 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/basicInfo">
-				<ol class="breadcrumb">
-					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
-					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
-					<li>{{#link-to 'user.index'}}{{this.name}}{{/link-to}}</li>
-					<li class="active">Basic Info</li>
-				</ol>
+			{{view "App.BreadCrumbView" pageTitle="Basic Info"}}
 
 				<h3>Basic Information</h3>
 				<form class="form-horizontal">
@@ -207,23 +203,13 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/changePassword">
-				<ol class="breadcrumb">
-					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
-					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
-					<li>{{#link-to 'user.index'}}{{this.name}}{{/link-to}}</li>
-					<li class="active">Edit Password</li>
-				</ol>
+			{{view "App.BreadCrumbView" pageTitle="Edit Password"}}
 
 			<h3>Password Stuff</h3>
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/changeRole">
-				<ol class="breadcrumb">
-					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
-					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
-					<li>{{#link-to 'user.index'}}{{this.name}}{{/link-to}}</li>
-					<li class="active">Change Role</li>
-				</ol>
+			{{view "App.BreadCrumbView" pageTitle="Change Role"}}
 
 				<h3>Roles</h3>
 				<form class="form-horizontal">
@@ -236,12 +222,7 @@
 		</script>
 
 		<script type="text/x-handlebars" data-template-name="user/addNote">
-				<ol class="breadcrumb">
-					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
-					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
-					<li>{{#link-to 'user.index'}}{{this.name}}{{/link-to}}</li>
-					<li class="active">Add Note</li>
-				</ol>
+			{{view "App.BreadCrumbView" pageTitle="Add Note"}}
 
 				<h3>Add Note to {{this.name}}</h3>
 
@@ -252,6 +233,15 @@
 			<h4>{{outputInt}}</h4>
 			<h4>{{outputString}}</h4>
 			<h4>{{otherThing}}
+		</script>
+
+		<script type="text/x-handlebars" data-template-name="breadcrumbs">
+				<ol class="breadcrumb">
+					<li>{{#link-to 'index'}}Admin{{/link-to}}</li>
+					<li>{{#link-to 'users'}}Users{{/link-to}}</li>
+					<li>{{#link-to 'user.index'}}{{this.name}}{{/link-to}}</li>
+					<li class="active">{{view.pageTitle}}</li>
+				</ol>
 		</script>
 	</body>
 
