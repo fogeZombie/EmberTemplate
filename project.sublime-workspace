@@ -1,0 +1,736 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div	Tag"
+			],
+			[
+				"Flo",
+				"DECELERATION_RATE_FLOOR"
+			],
+			[
+				"DECE",
+				"DECELERATION_AMOUNT"
+			],
+			[
+				"Dec",
+				"DECELERATION_FLOOR"
+			],
+			[
+				"DE",
+				"DESCENT_RATE"
+			],
+			[
+				"des",
+				"descentRate"
+			],
+			[
+				"current",
+				"currentHeight"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"cl",
+				"cl	console.log"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"functest",
+				"funcTest02"
+			],
+			[
+				"consol",
+				"console.	console.log()"
+			],
+			[
+				"webkit-",
+				"webkit-transform"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fas",
+				"false"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 43,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server.js",
+			"settings":
+			{
+				"buffer_size": 1214,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7852,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 2583,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Unity3D Build System/Unity.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"boil",
+				"Snippet: Simple HTML5 Boilerplate"
+			],
+			[
+				"boi",
+				"Snippet: Simple HTML5 Boilerplate"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 83.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Desktop/AssaultRifle_AK47Custom.xml",
+		"/C/Users/Foge/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/project.sublime-project",
+		"/C/Users/Foge/Desktop/SoD_Docs/SoD_SublimeProject.sublime-project",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/app.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/css/app.css",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/sublimeProject.sublime-project",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/libs/Utilities/Moment.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/models.js",
+		"/C/Program Files (x86)/NaturalMotion/euphoriaConnect 6.0.1/scripts/UpgradeProjectTo6.lua",
+		"/C/Users/Foge/Desktop/scratch.txt",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/node_modules/express/lib/view.js",
+		"/C/Users/Foge/Desktop/GitAI_Test/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/js/app.js",
+		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/index.html",
+		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/.gitignore",
+		"/C/Users/Foge/Desktop/peepcode-081-emberjs-1-code/peepcode-ember-starter-app_Foge/.jshintrc",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/.DS_Store",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/index.html",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/server.js",
+		"/C/Users/Foge/Desktop/MorphemeTutorials/.gitignore",
+		"/C/Users/Foge/Desktop/MorphemeTutorials/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/README.md",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/package.json",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/.gitignore",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/server.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/tmp/Temp01.txt",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/.gitignore",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/TODO.txt",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/LICENSE.txt",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/Fix.txt",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/DosKeyCommands.bat",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/README.md",
+		"/C/Users/Foge/.gitconfig",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/README.txt",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/.git/rebase-apply/patch",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/.git/config",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/File02.txt",
+		"/C/Users/Foge/Prototypes/LearningGit/FirstCommit/File01.txt",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/TODO.txt",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/README.txt",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/ReadMe.txt",
+		"/C/Users/Foge/Prototypes/LearningEmber/Template/app.js",
+		"/C/Users/Foge/Desktop/Stuff/Transfer.zip",
+		"/C/UL/class3/main/class3.log",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/UL_Sound_TalkingDoll.lua",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/Rifle_Monag9031.xml",
+		"/C/UL/kaiju/main/code/LobbySrv/LobbySrv/bin/Debug/Config.xml",
+		"/C/UL/kaiju/main/code/CombatSrv/CombatSrv/bin/Debug/Config.xml",
+		"/C/UL/kaiju/main/code/WorldSrv/WorldSrv/bin/Debug/Config.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/UL_Mine_Homemade_Lure.lua",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/Rifle_M110_SASS.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_552_Commando.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Gal_SAR.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_G36C.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_AK74.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_556_Swat.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_556S.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_XM8.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/Rifle_T21_Carbine.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Tar_21.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/Rifle_S2K.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/Pistol_F45.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/UL_Helicopter.lua",
+		"/C/Users/Foge/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Foge/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Foge/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/MG_M60E4.xml",
+		"/C/UL/class3/main/Game/Scripts/AI/Behaviors/Personalities/UL/Ally/UL_Ally_BaseBehavior.lua",
+		"/C/UL/class3/main/Game/Scripts/AI/Behaviors/Personalities/UL/Ally/UL_Ally_Watchtower_Shooter.lua",
+		"/C/UL/class3/main/Game/Scripts/Entities/AI/Bloater_x.lua",
+		"/C/UL/class3/main/Game/Scripts/GameRules/SinglePlayer.lua",
+		"/C/UL/class3/main/Game/Libs/Class3.2/RTS/Search.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_416_CQB.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_416.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_RFB.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_AK47Custom.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_ACR.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_AK47.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_AKMS.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_AR15.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_AR15_v2.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_AUG_A3.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_FAL.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_G36.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_L85A1.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_M14.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_M16A4.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_M4A1.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_M6.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_Mk17Mod0.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/AssaultRifle_ScarL.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/MG_M1918A2.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/MG_M249.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/MG_M27_IAR.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/MG_RPK.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M10.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M1A1.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M3.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M_P90.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M_P90B.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M_PS90.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_M_PS90B.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_Micro_Uzi.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_MP5A3.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_MP5K.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_MP7A1.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_P90.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_P9_Forge.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_PDS.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_Samurai_PDW.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_Super_Z.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_TMP9.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_UMP40.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_UMP40_E.xml",
+		"/C/UL/class3/main/Game/Scripts/Entities/Items/XML/Weapons/SMG_Uzi.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_552_CS.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_G3.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Tar_21_02.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Vz58.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_93R.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_Bz75Auto.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_Evo3.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_G18C.xml",
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_TacP.xml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open files>",
+			"<open files>,<open folders>",
+			"<open files>",
+			"<open files>,<open folders>",
+			"<open files>",
+			"<open files>,<open folders>",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"BreadCrumbView",
+			"BreadcrumbsView",
+			"white",
+			"repositories",
+			"moment",
+			"repoName",
+			"controller",
+			"\\",
+			"/",
+			"view",
+			"		o    ",
+			"	·         ",
+			"space",
+			"displa",
+			"	• ",
+			"30",
+			"f45",
+			"survivor",
+			"t21",
+			"auto",
+			"bloater",
+			"singleplayer",
+			"Variable",
+			".*(bool|int)",
+			"rts.*(bool|int)",
+			"bloater",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.4\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.1\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.85\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.00\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.15\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.06\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.6\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.00\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.2\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.08\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.85\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.00\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.4\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.1\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.85\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.0\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.15\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.06\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.6\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.0\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.2\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.08\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.85\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.0\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"firemode name=\"Automatic\"",
+			"param name=\"rotation_m\" value=\"0.01\"",
+			"param name=\"speed_m\" value=\"0.02\"",
+			"param name=\"speed_threshold\" value=\"1.0\"/",
+			"\\\\",
+			"\\",
+			"math",
+			".0",
+			"math",
+			"if.*(&&|AND)",
+			"helicopter",
+			"helicopterPos",
+			"self.CurrentPosition",
+			"tempPos",
+			"rotatedPos",
+			"offsetPos",
+			"placingModel",
+			"UL_Nuke",
+			"PlaySoundEvent",
+			"SOUND_PRECACHE_LOAD_SOUND",
+			"load.*sound",
+			"PlaySoundEvent",
+			"CurrentPosition",
+			"particle",
+			"set.*world.*pos",
+			"ARMING_TIMER",
+			"load.*sound",
+			"load",
+			"pre",
+			"UL_Mine_Homemade_Lure",
+			"name=\"speed_m\" value=\"0.02\"",
+			"file",
+			"let.*go",
+			"let's do this",
+			"(bird|chopper|helicopter)",
+			"bird",
+			"ELDRIDGE",
+			"END_Completion_Bad",
+			"…",
+			"—",
+			"–",
+			"”",
+			"“",
+			"‘",
+			"’",
+			"zed",
+			"dx_",
+			"// dx_",
+			"I'm getting on.*helicopter.*too",
+			"I'm getting on a helicopter too",
+			"I'm getting on",
+			"ready for extraction",
+			"…",
+			"better suited to your",
+			"um ...",
+			"Lear",
+			"Martin",
+			"Hall",
+			"Bliska",
+			"Jamie",
+			"Alma",
+			"bogatz",
+			"–",
+			"”",
+			"“",
+			"‘",
+			"’",
+			"Power acceleration.*top.*rever.*\"",
+			"Power acceleration.*top.*rever",
+			"Power acceleration.*top",
+			"Power acceleration",
+			"Power",
+			"Power.*Handbrake",
+			"\\<Power.*\\<Handbrake",
+			"<Power.*<Handbrake",
+			"Power accel",
+			"‘",
+			"–",
+			"“",
+			"”",
+			"–",
+			"’",
+			"–",
+			"”",
+			"“",
+			"’",
+			"((?<Start>.*)? )?(?<Version01>[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*)/(?<Version02[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*)(?<End>.*)?",
+			"((.*)? )?[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*(.*)?",
+			"(.*)? ?[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*(.*)?",
+			"(.*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*(.*)?",
+			"(.*)? [0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*(.*)?",
+			"(.*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*(.*)?",
+			"(.*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
+			"([0-9a-zA-Z]*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
+			"([0-9a-zA-Z]+)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
+			"([0-9a-zA-Z]+)? ?[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"                <param name=\"min\" value=\"0.0\"/>\n                <param name=\"max\" value=\"0.12\"/> <!-- max radius at 5m -->\n                <param name=\"attack\" value=\"0.04\"/> <!-- spread per shot -->\n                <param name=\"decay\" value=\"0.3\"/> <!-- time from max to min -->\n\n                <!-- movement modifier -->\n                <param name=\"speed_threshold\" value=\"1.0\"/> <!-- movement speed over this adds spread -->\n                <param name=\"speed_m\" value=\"0.0\"/> <!-- movement times this is added to spread -->\n\n                <param name=\"rotation_threshold\" value=\"1.0\"/> <!-- rotation over this add spread -->\n                <param name=\"rotation_m\" value=\"0.0\"/> <!-- rotation times this is added to spread -->\n",
+			"param name=\"rotation_m\" value=\"0.0\"",
+			"param name=\"speed_m\" value=\"0.0\"",
+			"param name=\"speed_threshold\" value=\"0.0\"/",
+			"/",
+			"UL_Helicopter",
+			"UL_Nuke",
+			"name=\"speed_m\" value=\"0.00\"",
+			"...",
+			"-",
+			"\"",
+			"'",
+			"",
+			"...",
+			"-",
+			"\"",
+			"'",
+			"-",
+			"\"",
+			"-",
+			"'",
+			"-",
+			"\"",
+			"'",
+			"/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server.js",
+					"settings":
+					{
+						"buffer_size": 1214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								701,
+								701
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 816.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 7852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5794,
+								5794
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 2583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2109,
+								2109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1776.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 221.0
+	},
+	"output.git":
+	{
+		"height": 154.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"mona",
+				"Weapons/Rifle_Monag9031.xml"
+			],
+			[
+				"men",
+				"Interaction/Editor/ULMenu.cs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Foge/Documents/Unity/InteractionEditor/InteractionEditor.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true
+}
