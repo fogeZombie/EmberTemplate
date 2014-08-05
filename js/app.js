@@ -81,7 +81,7 @@ App.FogeAlphaComponent = Ember.Component.extend({
 // views
 App.BreadCrumbView = Ember.View.extend({
   templateName: "breadcrumbs",
-  pageTitle: "SOMETHING"
+  pageTitle: "BREADCRUMB PLACEHOLDER TITLE"
 });
 
 // fixture data definition
