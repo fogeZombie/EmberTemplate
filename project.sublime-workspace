@@ -115,7 +115,7 @@
 			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 43,
+				"buffer_size": 38,
 				"line_ending": "Windows"
 			}
 		},
@@ -139,7 +139,23 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 2583,
+				"buffer_size": 2602,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Foge/Prototypes/LearningEmber/discourse/app/assets/javascripts/discourse/routes/application_routes.js",
+			"settings":
+			{
+				"buffer_size": 3333,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "project.sublime-project",
+			"settings":
+			{
+				"buffer_size": 293,
 				"line_ending": "Windows"
 			}
 		}
@@ -216,10 +232,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Foge/.iex.exs",
+		"/C/Users/Foge/Prototypes/LearningEmber/discourse/vendor/assets/javascripts/production/ember.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/discourse/vendor/assets/javascripts/development/ember.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/discourse/app/assets/javascripts/discourse/routes/discourse_route.js",
+		"/C/Users/Foge/Prototypes/LearningEmber/discourse/app/assets/javascripts/discourse.js",
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/.git/COMMIT_EDITMSG",
+		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/project.sublime-project",
 		"/C/Users/Foge/Desktop/AssaultRifle_AK47Custom.xml",
 		"/C/Users/Foge/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/project.sublime-project",
 		"/C/Users/Foge/Desktop/SoD_Docs/SoD_SublimeProject.sublime-project",
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/js/app.js",
 		"/C/Users/Foge/Prototypes/LearningEmber/EmberTemplate/css/app.css",
@@ -338,12 +359,7 @@
 		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_552_CS.xml",
 		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_G3.xml",
 		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Tar_21_02.xml",
-		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Vz58.xml",
-		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_93R.xml",
-		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_Bz75Auto.xml",
-		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_Evo3.xml",
-		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_G18C.xml",
-		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/SMG_TacP.xml"
+		"/C/UL/class3/main/Game/Scripts/class3_2/entities/items/XML/AssaultRifle_Vz58.xml"
 	],
 	"find":
 	{
@@ -369,6 +385,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"router.map",
 			"BreadCrumbView",
 			"BreadcrumbsView",
 			"white",
@@ -495,8 +512,7 @@
 			"(.*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*(.*)?",
 			"(.*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
 			"([0-9a-zA-Z]*)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
-			"([0-9a-zA-Z]+)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*",
-			"([0-9a-zA-Z]+)? ?[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*"
+			"([0-9a-zA-Z]+)? *[0-9a-zA-Z]+/[0-9a-zA-Z]+['’]?[0-9a-zA-Z]*"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -540,7 +556,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -548,15 +564,15 @@
 					"file": ".gitignore",
 					"settings":
 					{
-						"buffer_size": 43,
+						"buffer_size": 38,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								38,
+								38
 							]
 						],
 						"settings":
@@ -609,8 +625,8 @@
 						"selection":
 						[
 							[
-								5794,
-								5794
+								454,
+								454
 							]
 						],
 						"settings":
@@ -629,15 +645,15 @@
 					"file": "js/app.js",
 					"settings":
 					{
-						"buffer_size": 2583,
+						"buffer_size": 2602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2109,
-								2109
+								2276,
+								2276
 							]
 						],
 						"settings":
@@ -648,6 +664,61 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1776.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Users/Foge/Prototypes/LearningEmber/discourse/app/assets/javascripts/discourse/routes/application_routes.js",
+					"settings":
+					{
+						"buffer_size": 3333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								515,
+								515
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "project.sublime-project",
+					"settings":
+					{
+						"buffer_size": 293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								159
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
